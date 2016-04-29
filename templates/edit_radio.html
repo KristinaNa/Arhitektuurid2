@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+    <body>
+    <a href='/radio/s'>servlet</a> | <a href='/log.txt'>log.txt</a> <br>
+        <form method="POST" action='/radio/s' name="frmAddRadio">
+            <table>
+                <tr>
+                    <td>ID: </td>
+                    <td><input type="text" readonly="readonly" name="radio" value="{{ radio.id }}" /> <br/></td>
+                </tr>
+                <tr>
+                    <td>Station name: </td>
+                    <td><input type="text" name="name" value="{{ radio.id }}" /> <br/></td>
+                </tr>
+                <tr>
+                    <td>Sequence: </td>
+                    <td><input type="text" name="sequence" value="{{ radio.id }}" /> <br/></td>
+                </tr>
+                <tr>
+                    <td>Description: </td>
+                    <td><input type="text" name="description" value="{{ radio.id }}" /> <br/></td>
+                </tr>
+            </table>
+            <input class="submit" type="submit" value="Submit" />
+        </form>
+    </body>
+</html>
